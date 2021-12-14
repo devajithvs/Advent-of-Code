@@ -3,7 +3,8 @@ package main
 import (
 	"fmt"
 	"path/filepath"
-	"github.com/devajithvs/adventofcode/utils/filehandler"
+	"github.com/devajithvs/Advent-of-Code/golang/utils/filehandler"
+	"time"
 )
 
 func main() {
@@ -24,14 +25,13 @@ func main() {
 
 func Solution1(filename string) int {
 	inputPath, _ := filepath.Abs(filename)
-	inputValue := filehandler.GetInput(inputPath)
+	inputValue := filehandler.ReadLines(inputPath)
 	fmt.Println(inputValue)
 	return ""
 }
 
 func Solution2(filename string) int {
-	inputPath, _ := filepath.Abs(filename)
-	inputValue := filehandler.GetInput(inputPath)
-	fmt.Println(inputValue)
-	return ""
+	// inputPath, _ := filepath.Abs(filename)
+	// inputValue := filehandler.ReadLines(inputPath)
+	return 0
 }
